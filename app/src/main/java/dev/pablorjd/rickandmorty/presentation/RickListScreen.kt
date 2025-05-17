@@ -38,6 +38,7 @@ fun RickListScreen(rickListViewModel: RickListViewModel = hiltViewModel()) {
 
     val characters = rickListViewModel.characters.collectAsLazyPagingItems()
 
+
     Box(modifier = Modifier.fillMaxSize()) {
         Image(
             painter = painterResource(id = R.drawable.background),
